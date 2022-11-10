@@ -1,14 +1,31 @@
 [NOTE]
 This is Work In Progress
 
-Audio (XLR) Inputs and Outputs Open Source Hardware
-project for use with libre software.
+Quadrature decoder for use with a rotary (A&B wires type) encoder.
 
-image:xlrdac-pcb-side.jpg["View of the line driver PCB", link="https://github.com/nedko/xlrdac/", width="100%"]
+Features:
 
-image:xlrdac-pcb.png["KiCAD screenshot of the line driver PCB", link="https://github.com/nedko/xlrdac/", width="100%"]
+ * Clock-less operation. That is, no clocks, even within the chips.
+   This is a good for audio prosumer and hi-fi uses,
+   or any other uses where noise emission is to be kept low,
+   e.g. Frequency knob of HAM radio VFO.
+ * Analog output (at least 12bit - 4096 steps) *slow* analog DAC,
+   via covox-style resistor network.
+ * Relatively cheap to build.
 
-https://raw.githubusercontent.com/nedko/xlrdac/main/xlrdac-sch.pdf[Schematic], in PDF format.
+As stated in the top note, the project is Work In Progress.
+That is, there is no physically built prototype yet.
+
+The clock-less operation also means asynchronous operation of the
+logic. That is, a finite state automatas are have their state
+transitioned at clock ticks that are part of the input. In this case,
+the clock input is the rotary encoder itself. When rotary encoder does
+not move, no logic switches will occur. The aimed design is with DIP
+packaged CMOS logic chips from CD40XX series, as they are (currently
+and fortunately) relatively cheap and easy to assemble in small volumes
+by human with some soldering skills. PCBs of an SMD design variant of
+the same schematics are usually populated by specialized machines, but
+with some skill the PCB can be populated with manually by humans too.
 
 Tools:
 
