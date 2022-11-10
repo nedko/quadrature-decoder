@@ -346,7 +346,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "quadrature.kicad_pro",
+    "filename": "quadrature-decoder.kicad_pro",
     "version": 1
   },
   "net_settings": {
