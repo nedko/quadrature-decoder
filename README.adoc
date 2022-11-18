@@ -23,9 +23,9 @@ the clock input is the rotary encoder itself. When rotary encoder does
 not move, no logic switches will occur. The aimed design is with DIP
 packaged CMOS logic chips from CD40XX series, as they are (currently
 and fortunately) relatively cheap and easy to assemble in small volumes
-by human with some soldering skills. PCBs of an SMD design variant of
+by human with some soldering skills. PCBs of a SMD design variant of
 the same schematics are usually populated by specialized machines, but
-with some skill the PCB can be populated with manually by humans too.
+with some skill the PCB can be populated manually by humans too.
 
 Tools:
 
